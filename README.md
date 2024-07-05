@@ -1,24 +1,36 @@
-[![Frontend Masters](https://static.frontendmasters.com/assets/brand/logos/full.png)](https://frontendmasters.com/courses/client-graphql-react-v2/)
-
-This repo is a companion to the [Client-Side GraphQL course](https://frontendmasters.com/courses/client-graphql-react-v2/) on Frontend Masters.
-
-Here's a link to the [Course Notes](https://clumsy-humor-894.notion.site/Client-side-GraphQL-with-React-4248372d51604858aaf9eeb9127b6433)
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-This course repository requires Node version 20+ and a [TursoDB account](https://turso.tech/). More details can be found in [the course notes](https://clumsy-humor-894.notion.site/Client-side-GraphQL-with-React-4248372d51604858aaf9eeb9127b6433).
-
-1. Fork/Clone [the repo](https://github.com/Hendrixer/clientside-gql)
-2. Install the Dependencies with `npm install`
-3. Create a [Turso](https://turso.tech/) DB account (free)
-   - Follow the instructions to make a new DB (you don’t need a replica)
-   - Follow instructions to download the CLI and authenticate
-   - Using the CLI, generate a token for your db with this command `turso db tokens create [your db name]`
-4. Create a `.env` file on the root and add these environment variables:
+First, run the development server:
 
 ```bash
-TURSO_CONNECTION_URL="your turso db url"
-TURSO_AUTH_TOKEN="your db token"
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-5. Push the schema to your Turso DB with this command `npm run db:push`
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
